@@ -1,0 +1,106 @@
+
+*{ box-sizing: border-box; }
+img{ width: 100%; height: 100%;
+}
+.container{
+ background-color: lightgray;
+ width: 100%;
+ height: 800px;
+}
+.header{
+ width: 80%;
+ margin: auto;
+ border: solid black;
+ box-shadow: 5px 5px 5px black;
+ padding: 20px;
+ font-size: 30px;
+ font-weight: 600;
+ text-align: center;
+ background-color: white;
+}
+
+
+.message1{
+ width: 80%;
+ margin: auto;
+ border: solid black;
+ box-shadow: 5px 5px 5px black;
+ padding: 20px;
+ font-size: 30px;
+ font-weight: 600;
+ text-align: center;
+ background-color: white;
+}
+.b{
+    position: absolute;
+    bottom: 6px;
+    left: 16px;
+}
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+.message2{
+ width: 80%;
+ margin: auto;
+ border: solid black;
+ box-shadow: 5px 5px 5px black;
+ padding: 20px;
+ font-size: 30px;
+ font-weight: 600;
+ text-align: center;
+ background-color: white;
+}
+
+.em{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Centered text */
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+.message3{
+ width: 80%;
+ margin: auto;
+ border: solid black;
+ box-shadow: 5px 5px 5px black;
+ padding: 20px;
+ font-size: 30px;
+ font-weight: 600;
+ text-align: center;
+ background-color: white;
+}
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+.top-right{
+   position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }

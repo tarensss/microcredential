@@ -1,0 +1,43 @@
+
+ 
+/*
+ let number1 = 56;
+        let number2 = -80;
+        let number3 = 3/4;
+        let mesage = "true";
+        let boolean = true;
+
+
+        let color = "beige";
+        let msg = "Hello world";
+
+        console.log(number2);
+        console.log("Good evening ");
+        console.log("The color is "+color);
+        cosnole.log('THe color is: ${}');
+      
+        let num1 = propmt("Enter number 1: ");
+        num1 = parseInt(num1);
+        let num2 = propmt("Enter number 2: ");
+        let summation = num1 + num2;
+
+
+        //strings
+        let name = "will smith";
+        let nameLength = name.length;
+        let upperName = name.toUpperCase();
+      let lowerName = name.toLowerCase();
+
+
+
+
+
+   let num1 = prompt("Enter name: ");
+    let num2 = prompt("Enter lucky number: ");
+    num2 = parseInt(num2);
+    console.log= ("welcome to the program " + num1 +". your lucky number is "+ num2);
+    
+    let greetings =`Good Morning ${num1}, you entered number: ${num2}`;
+    console.log=(greetings);
+
+*/
