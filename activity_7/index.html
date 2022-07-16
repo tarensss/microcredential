@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Activity 7 </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <script >
+    /*
+       //ex. 1 us of for loop to print an increasing counter from 1 to 10
+    for (var i = 0; i < 10; i++) {
+      console.log(`the current counter is ${i}`);
+    }
+
+    //ex 2 write  a js code that uses for loop to print every number from 0 to 100  exclusive
+   let num = 7
+    
+    for (num;num<100;num++){
+      if(num%2==0){
+        console.log(num);
+    }}
+
+
+    //ex3 write a js code that uses for loop to print every number from 100 to 0  inclusive with a decrement of 10 
+    for (let num=100;num<0;num-=10){
+      console.log(num);
+    }       
+    
+    //ex 4 write a js code that uses for loop to print every number from 0 to 100  inclusive with a decrement of 10
+    let cars = ["BMW", "Volvo", "Saab", "Ford"];
+    for (let i = 0; i < cars.length; i++) {
+      console.log(`car ${i+1} is ${cars[i]}`);
+    }
+
+    //ex 5 use of loop to print each element of an array
+    let cars = ["BMW", "Volvo", "Saab", "Ford"];
+    for (let eachCars of cars){
+        console.log(eachCars);
+        }
+
+
+
+    //example 6 use a for lppp to print each character in a string
+    let myString = "world!"
+    for(let eachLetter of myString){
+      console.log(eachLetter);
+    }
+    
+   //ex 7 create an array of foods use a for loop to display a message with each value in array foods. for exapmle I want some all ven foods will be uppercase
+   let foods = ["pizza", "tacos", "burritos", "chicken"];
+   for(let item=0;item<foods.length;item++){
+      if (item%2===0){
+      let itemUpper = foods[item].toUpperCase();  
+      console.log(`i want sime ${itemUpper}`);    
+   }
+    else{
+      console.log(`I want some ${foods[item]}`);
+   }
+
+   //ex 8 write a js code that will print a decrment from 30 ti  0 ,decrment times
+   for(let counter = 1;counter<=5;counter++){
+      console.log(`OUTER LOOP COUNT \t\t\t\ ${counter}`)
+        for(let innerCounter = 1;innerCounter<=5;innerCounter++){
+             console.log(`INNER LOOP COUNT \t\t\t\ ${innerCounter}`)
+        }
+   }
+   
+
+   //example 9) use while loop to display number from 0 to 4 
+   let initial = 0;
+   while(initial<=4){
+     console.log(`the current counter is ${initial}`);
+     initial++;
+   }
+
+//ex 10 using while lllop that asks the user to guess a 
+
+const secret = 8;
+let numberUser = parseInt(prompt("guess a number between 1 and 10"));
+while(numberUser!==secret){
+    numberUser = parseInt(prompt("guess a number between 1 and 10"));
+}
+
+
+// ex 11  create a js code that will stop a decrment counter fromm 20 to 9 inclusive when the counter reaches to 9
+for (let counter = 0;counter<=10;counter++){
+    console.log(`Counter=${counter}`);
+}
+
+
+//example 12) create a js code that wull skip a number if an increment counter from 0 to 10  inclusive. the skip number is entered by user from a dailog box.
+let userPick = parseInt(prompt("enter a number between 0 and 10"));
+for (let counter = 0;counter<=10;counter++){
+    console.log(`Counter=${counter}`);
+    if(counter===userPick){
+        continue;
+    }
+}
+*/
+
+
+
+// write the program that asks the user to enter a number between 1 and 10 in the dialog box and check if the entered value is a number between 1 and 10. If the user enters a number that is not between 1 and 10 or a string, the program will prompt a dialog box:
+
+let userPick = parseInt(prompt("enter a number between 1 and 10"));
+while  (userPick<1 || userPick>10 || isNaN(userPick)){
+    userPick = parseInt(prompt("enter a number between 1 and 10"));
+
+if(isNaN(userPick)){
+    console.log(`${userPick} is not a number.Enter a number again`);
+}
+else if( userPick>10){
+    console.log(`${userPick} is greater than 10. Enter a number less than 10.`);
+}else if(userPick<1){
+    console.log(`${userPick} is less than 1. Enter a number greater than 1.`);}
+else{
+    console.log(`you entered ${userPick}`);
+}
+
+}
+
+
+
+
+
+  </script>
+
+ 
+
+</body>
+
+</html>
