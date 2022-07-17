@@ -108,6 +108,9 @@ for (let counter = 0;counter<=10;counter++){
 // write the program that asks the user to enter a number between 1 and 10 in the dialog box and check if the entered value is a number between 1 and 10. If the user enters a number that is not between 1 and 10 or a string, the program will prompt a dialog box:
 
 let userPick = parseInt(prompt("enter a number between 1 and 10"));
+    
+for (let counter = 0;counter<=20;counter++){    
+
 while  (userPick<1 || userPick>10 || isNaN(userPick)){
     userPick = parseInt(prompt("enter a number between 1 and 10"));
 
@@ -122,6 +125,7 @@ else{
     console.log(`you entered ${userPick}`);
 }
 
+}
 }
 
 
