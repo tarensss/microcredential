@@ -1,0 +1,43 @@
+*{box-sizing: border-box;}
+
+
+
+
+
+
+.h1_header{text-align: center;font-family: Arial, Helvetica, sans-serif; }
+
+
+
+.photo_img1{ width: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+    height: auto;
+    margin-left: 10%;
+
+}
+
+
+.photo_img2{ width: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+    margin-left: 20%;
+}
+
+.photo_img3{ width: 10%;
+   height: 10%;
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+    margin-left: 20%;
+    
+}
+
+
+
+
+
+
+
