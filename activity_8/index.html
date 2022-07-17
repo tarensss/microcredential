@@ -215,18 +215,22 @@ function checkNum()
 
 
 	
+
 	
-colorPick = Math.round((Math.random() * 100));
 
 
-function lottery(lastIndex){
-	let pick = Math.round(Math.random()*lastIndex)
-	return pick
+//Write a program that simulates a ticket purchase using function lottery(). The function takes one parameter as the number of games. Function lottery() randomly generates five numbers, between 0 and 99, per game and console the numbers per game.
+
+function lottery(numss){
+	let lottery = [];
+	for(let i=0;i<5;i++){
+		let num = (Math.round((Math.random() * 100)));
+		lottery.push(num) * numss;
+
+	}
+	console.log(lottery);
 }
 
-
-pickedIndex = colorPick(colors.length-1)
-console.log(`The picked color is =${pickedIndex}`)
 
 
 
