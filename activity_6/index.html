@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <script src="script.js"></script>
+ 
 
  
 <script>
@@ -193,28 +193,22 @@ switch (selectcolors){
 
 // 1
 */
-let user = prompt("Enter a number or string: ");
-
-let checkInput = isNaN(user);
-
-if (checkInput){
-    console.log(`${userInput} is a string`);
-}
-else if(checkInput<0){
-    console.log(`${userInput} is a negative number`);
-}
-else if(checkInput>0){
-    console.log(`${userInput} is a positive number`);
-}
-
-else{
-    console.log(`${userInput} is a number`);
-}
-
-
-
-// 2 
   
+let user = prompt("Enter a number or string: ");
+let check = isNaN(user);
+if (check){
+    console.log(`${user} is a string`);
+}
+else if(user <0){
+    console.log(`${user} is a negative number`);
+}
+else{
+    console.log(`${user} is a positive number`);
+}
+
+
+
+
 let color = prompt("choose a color \n a.red \n b.green \n c.blue ");
 
 switch (color){
@@ -231,17 +225,6 @@ switch (color){
         console.log(`color is not in the list`);
         break;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
