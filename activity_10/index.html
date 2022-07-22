@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Activity 10 : DOM</title>
+
+
+  <style media="screen">
+    .colorBlue{color: darkblue; text-align: center; font-size: 20px;}
+    .colorSubtitle{color:orangel;text-align: right;font-family:algerian;}
+    .subtitle{font-size:2em;text-align:center;background-color: lightgreen;}
+    li{backlground-color: magenta;}
+    .highlight{background-color: olive;}
+  </style>
+
+</head>
+
+<body>
+ 
+<!--- ex 1--->
+<p id = "one" >Here  is some text</p>
+<!--- ex 2--->
+<p>Here is some text 1</p> 
+<p>Here is some text 2</p>
+<p>Here is some text 3</p>
+<!-- example 3 and 4 and 5 -->
+<div id="special">
+    <p class="name">First Name</p>
+    <p class="name">Last Name</p> 
+    <p class="n1">Full Name</p> 
+</div>
+
+<!-- example 5 -->
+
+<img src="https://devsprouthosting.com/images/egg.jpg" 
+width="200px" class ="image1">
+<!-- example 11 -->
+<h2 class="colorSubtitle" id="subH2">example of classes</h2>
+
+
+
+
+<ul>
+    <li>Hello 1</li>
+    <li class="highlight">Hello 2</li>
+    <li>Hello 3</li>
+    <li>Hello 4</li>
+    <li class="highlight ">Hello 5</li>
+    <li>Hello 6</li>
+</ul>
+
+
+
+
+
+<script type="text/javascript">
+
+// ex 13 create  and apppend  a new elemnet  to the body
+// find location where you want to append the new element
+let newLocation = document.querySelector("#subH2");
+const newImg = document.createElement('img')// step 1
+//step 2  gives content to soruce
+
+newImg.src= 'https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2bd1e5be/images/Summer2022/295funsize_su3_hm_to.gif?yocs=s_'
+// step 3) append to the end of <body>
+document.body.appendChild(newImg)
+
+newImg.style.width = '50%'
+
+
+//ex 12 class : classList .taggle
+let listItem = document.querySelectorAll("li")
+for(let eachitem of listItem){
+   eachItem.classList.toggle('highlight')
+}
+
+
+//ex 11  : adding classes
+let subtitleH2 = document.querySelector('#subH2');
+subtitleH2.classList.add('Subtitle');
+
+//ex 10 
+let image = document.querySelector('.image1');
+image.setAttribute('alt','image of an egg')
+image.setAttribute('title','white egg')
+
+
+// ex 8 add a class name " colorBlue" to <p class="n1">
+let fullName = document.querySelector(".n1")
+fullName.className = 'colorBlue'
+    
+
+
+//ex 6  
+let allP = document.querySelectorAll('p')
+allP.innerHTML = '<b><em>HELLO</em></b>THERE'
+
+
+//ex 5
+let collectName = document.querySelectorAll('.name')
+for(let  name of collectionName){
+    name.style.padding = '1em'
+    name.style.backgroundColor = 'yellow'
+}
+
+//example 4
+let container = document.querySelector('special')
+let n1P =document.querySelector('.n1') 
+let pTag = document.querySelector('p')
+
+container.style.backgroundColor = 'lightblue'
+n1P.style.fontSize = '1.5em' 
+pTag.style.textAlign='center'
+
+// example 3
+let n = document.getElementsByClassName('name')
+for (let eachName of n) {
+    eachName.style.color = 'magenta'
+}
+
+// ex 2
+let myText = document.getElementsByTagName('p')
+console.log(myText)
+
+
+// ex 1
+let pOne = document.getElementById('one')
+pOne.style.color = 'red'
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
