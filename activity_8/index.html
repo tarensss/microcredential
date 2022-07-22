@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Activity_8</title>
+
+</head>
+
+<body>
+	
+	<script>
+	
+		/*
+	  function msg(){
+		console.log("Hello!")
+
+	  }
+
+	  function printcount(){
+	  for(let i=3;i>=1;i-=1){
+		console.log(i)
+	  }
+	}
+
+	  function greetings(name){console.log(`hello ${name}`)}
+
+	  function upperMessage(message){
+	  	let upper = message.toUpperCase();
+	  	console.log(upper)
+
+	  }
+
+
+
+//	ex 5
+function great(firstName,lastName){
+
+console.log(`Helllo ${firstName} ${lastName[0].toUpperCase()}`)
+}
+
+//ex 6
+function printMsg(message, numCount){
+	for(counter =0;counter<numCount;counter++)
+		{console.log(`Counter ${counter} = ${message}`)
+}}
+
+//ex 7
+
+
+function isSnakeyes(dice1, dice2){
+	if(dice1==1 & dice2===1){
+		console.log(`Snake Eyes!`)
+
+	}else{`Not Snake Eyes!`}
+
+}
+
+
+
+// ex 8
+	function sumXY(){
+		let x = 7, y=-3
+		return x+y
+		console.log(`Hello world!`)
+	}
+
+// ex 9 
+	function doubleNUmber(number){
+		let dNumber = number*2;
+		return dNUmber
+
+}	
+
+
+// ex 10 
+let a=5/6, b=3, c=9, d=-5
+  
+  function sumNUm(num1,num2){
+	let sum = num1+num2
+	return sum
+	}
+let number1 = sumNUm(10,d)
+let number2 = sumNUm(a,c)
+
+//ex 11
+
+	function isShortsWeather(temperature){
+		if (temperature >=75)
+			{return true;}
+	else{return false;}
+	}
+
+
+//ex 12
+function lastElement(arrayInput){
+	return null
+}elseif {
+	arrayInputLength !== 0
+}
+let lastIndex = arrayInput.length-1;
+return arrayInput[lastIndex]
+}
+else{return null}
+
+
+
+// ex 13 Math function in JS
+
+	let numPI = Math.PI;
+	console.log(`PI value = ${numPI}`)
+	console.log(`PI with Math.round() = ${Math.round(numPI)}`)
+	console.log(`PI with Math.ceil() =  ${Math.ceil(numPI)}`)
+	console.log(`PI with MAth.floor()=  ${Math.floor(numPI)}`)
+	console.log(`Pi with Math.trunc() = ${Math.trunc(numPI)}`)
+	console.log(`Math.pow(b,e) = ${Math.pow(2,3)}`)
+	console.log(`Math.sqrt(85) = ${Math.sqrt(85)}`)
+	console.log(`Math.random() = ${Math.random()}`)
+
+// ex 14 
+
+function pickNum(){
+	let pick = 10 + Math.round(Math.random()*10)
+	return pick
+}
+
+
+
+// ex 15 
+let colors = ["red","green,"blue","yellow","orange"]
+
+	function colorPick(lastIndex){
+		let pick = Math.round(Math.random()*lastIndex)
+		return pick
+	}
+
+
+	pickedIndex = colorPick(colors.length-1)
+	console.log(`The picked color is =${pickedIndex}`)
+
+
+
+
+*/
+
+// Activity 8
+
+
+function checkName()
+{
+	let name = prompt("Enter your name");
+	let vr = parseInt(name)
+
+	while (name === "" || name === null || !isNaN(vr)){
+		
+		if (name ==="" || name === null)
+		{
+			name = prompt("You forgot to enter a name. Enter a name again:");
+			vr = parseInt(name)
+		}
+		else if (!isNaN(vr))
+		{
+			name = prompt(`${name} is invalid! Enter a name again:`);
+			vr = parseInt(name)
+		}
+
+
+	}
+	console.log(`Welcome ${name.toUpperCase()} to the class!`)
+}
+
+
+
+
+
+
+function checkNum()
+{
+	let num = prompt("Enter a number");
+	let vr = parseInt(num)
+	
+	while (num === "" || num === null || isNaN(vr)){
+		
+		if (num ==="" || num === null)
+		{
+			num = prompt("Enter your num again");
+			vr = parseInt(num)
+		}
+		else if (isNaN(vr))
+		{
+			num = prompt("you enter a string  , please enter your num again");
+			vr = parseInt(num)
+		}
+
+
+	}
+
+	if (num % 2 === 0)
+	{
+		return true
+	}
+	else{
+		return false
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Write a program that simulates a ticket purchase using function lottery(). The function takes one parameter as the number of games. Function lottery() randomly generates five numbers, between 0 and 99, per game and console the numbers per game.
+
+function lottery(numss){
+	let lottery = [];
+	for(let i=0;i<5;i++){
+		
+			let num = numss*Math.round(Math.random()*100);
+			lottery.push(num);
+		
+			
+	
+	}
+	for(let i=0;i<numss;i++){
+		console.log(lottery);
+	}
+}
+
+
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
+
+
+
