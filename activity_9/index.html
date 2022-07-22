@@ -4,83 +4,162 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Activity 9</title>
+ 
 </head>
 
 <body>
+    <h1>Call your Activity: 9</h1>
 
-  <script src="script.js">  
-  
+  <script>
 
- 
 
-// ex 8 
-const cat = {
+// ex  1
+let msg = 'This is an outside message'
+function displayMsg(){
+    msg = "Hello world! I'm inside of a function!"
+    console.log(msg)
+}
 
-    name: 'Mickey',
-    color: 'White with black spots',
-    breed:'unkonwn',
-    meow(){
-        console.log(`${this.name} MEOW MEOW MEOW`);
+console.log(msg)
+
+
+
+// ex 1.b
+let msg1 = 'This a global variable'
+function displayMsg1(){
+    console.log(`function message ${msg1}`)
+
+}
+console.log(`After function ${msg1}`)
+
+
+
+// ex 2 
+var fullMoon = false;
+let species = 'human' //gloabal variable
+if (fullMoon){
+    let species = 'werewolf'//local variable
+    console.log(`Lupin is currently ${species}`)
+}
+console.log(`Lupin is outside the if-statment ${species}`)
+
+
+
+
+// ex 3 save a function in a variable
+const sum = function(num1,num2){
+    return num1+num2
+}
+
+
+//ex 3.B return the square of a number
+let square = function(num){
+    return Math.pow(num,2)
+}
+
+
+// ex 4 define a function that will run twice the function rolldice
+
+function callTwice(dice){
+   console.log(dice())
+   console.log(dice())
+}
+
+function rolldice(){
+    const roll = Math.floor(Math.random()*6)+1
+    return roll
+}
+
+
+// ex  5  returingn function 
+function makebetweenFunct(min,max)
+{
+    return function(num){
+        return num>=min && num<=max
     }
 }
 
 
-// ex 9 
 
+
+// ex 6 create a method for object myMath
+const myMath ={
+    square (num){return num*num},
+    double (num){return num*2},
+}
+
+
+//ex 7 define an object called square ,which will hold methoids area and perimeter
+const squareFig={
+    area (side){return side*side},
+    perimeter(side){return side*4}
+
+}
+
+
+//ex  8 use the "this" keyword in an object 
+const cat =
+{
+    name : 'Fluffy',
+    age : 7,
+    color:'white',
+    breed:'unknown',
+    meow(){console.log(`${this.name} MEOW MEOW MEOW`)}
+}
+
+//ex 9 define an object called "hen" with two properties and a method
 const hen = {
-
-    name: 'Helen',
-    eggCount: 0,
-    layAnEgg (){this.eggCount++;return `EGG! Egg count = ${this.eggCount}`;} 
-
+    name:'Helen',
+    eggcount: 0,
+    layAnEgg(){
+       this.eggcount++;return `EGG! Egg count = ${this.eggcount}`
+    }
 }
 
 
-// try and catch
-let hello = 'Hey There!'
- try{
+// try and catch 
+let hello = 'HEY THERE!'
+try{
     console.log(hello.toUpperCase())
- }
-catch{
-
-    console.log('Error')
 }
-console.log('After try and catch')
-
-// Ex 10 
-console.log('Ex 10 try and catch')
-
-function yell(message)
-{
-    try{
-        console.log(message.toUpperCase().reapeat(3))
-    }
-    catch(e){
-        console.log('Please pass a string next time')
-    }
+catch(err){
+    console.log('EROOR!')
 }
 
+console.log('After Try and Catch! ')
 
-// Ex 11 default paramets in function
-console.log('Ex 11 default paramets in function')
-function rollDice(numSides=6)
-{
-    return Math.floor(Math.random() * numSides) + 1
+
+//ex  10
+console.log('Ex 10) try and catch')
+function yell(message){
+try{
+    hello.toUpperCase()
+}catch{
+    console.log('error')
+}
+}
+
+// ex 11 default parameters in functions
+console.log('Ex 110 default paramters')
+
+function rolldice(numSides){
+    return Math.floor(Math.random()*numSides)+1
 }
 
 
-// Ex 12 spread ...
+// ex 12  spread ...
 console.log('Example 12) spread!')
-let nums = [-9,20,-13,8,6]
+let nums = [-9,20,13,8,6]
 let greatest = Math.max(6,-1,7,-10,5)
 let lowest = Math.min(6,-1,7,-10,5)
-let animals = ['cat','dog','bird','fish','snake']
+
+let animal = ['cat','dog','bird','fish','lizard']
 let copyAnimal = [...animal]
 
 
-</script>
+
+    </script>
 
 </body>
 
