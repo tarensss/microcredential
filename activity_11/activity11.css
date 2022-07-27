@@ -1,0 +1,39 @@
+body{background-color: lightblue;}
+*{box-sizing:  border-box;}
+.colorContainer{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#btnColor{background-color: grey; color: purple; padding: 0.5em; margin: 5em 30%; width:40%; border-radius: 5px;}
+
+
+/* ex 9 */
+.divColor{display: inline-block;}
+.divColor{width: 30%;margin-left: 2%; border: inset 10px; height: 100px}
+
+.divContainer{display:inline-block; width: 100%; float: left; margin-bottom: 2em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
