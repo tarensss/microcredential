@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"> <title>Type your name: activity 15</title>
+<meta charset="utf-8"> 
+<title>Type your name: Activity 15</title>
 
 </head>
 <body>
 
-<h1>Type your name: activity 15</h1>
+<h1>Type your name: Activity 15</h1>
+
+<script src="https://cdn.jsdeliver.net/npm/axios/dist/axios/min.js"></script>
+
 <script type="text/javascript"> 
 
 
-
-//mkaing a specific  request using api headers
-const getyear = async()=>{
+// making a specific  request using API headers
+const getYear = async()=>{
     const config = {headers: {accept: 'application/json'}};
     const res = await axios.get('https://awapi.dev/api/people/1/')
+
+    console.log("using headers in axios. NAME: ", res.data.name,"BIRTH YEAR:", res.data.birth_year);
 }
 
 
-
-
-// choosing speciific response
-
+// choosing specific response
 const personID = async(id) =>{
 try{
     const res = await axios.get(`https://swapi.dev/api/people/${id}`);
@@ -32,23 +34,19 @@ try{
 }
 
 
-//making request using axios
 
-let axios  = axios.get("https://swapi.dev/api/people/1")
+//making request using axios
+let axios = axios.get("https://swapi.dev/api/people/1")
 
     .then(res => {
         console.log("Response using axios",res)
     })
 
 
+// try and  catch statment in fetch 
+// making multiple requests using  fetch 
 
 
-
-
-
-
-//try and  atch statment in fetch 
-//making multiple requests using  fetch 
 const loadpeople = async () => {
 
 try{
@@ -61,28 +59,22 @@ try{
 }catch(err){
     console.log(`Error`, err)
 }
-
-}   
-
+}
 
 
-
-
-
+// Making an AJAX request using fetch
 fetch ("https://swapi.dev/api/people/1/")
-    .then((res)=>{
-
+.then((res)=>{
     console.log("LOADED! : using fetch",res)
     res.json().then((data)=>console.log("json result using fetch", ))
 })
 
 
-//making  an AJAZ request using XHR
-
+// Making  an AJAX request using XHR
 const req = new XMLHttpRequest();
 req.onload = function(){
     console.log("LOADED! : using XHR");
-
+    console.log(this.response)  
     const person = JSON.parse(this.response)
     console.log(`NAME: ${person.name} , HEIGHT ${person.height}`)
 }
@@ -92,6 +84,8 @@ req.onerror = function(){
     console.log('ERROR!');
     console.log(this)
 }
+
+
 
 req.open("GET", "https://swapi.dev/api/people/1/");
 req.send();
