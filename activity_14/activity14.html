@@ -1,0 +1,129 @@
+<html>  
+<head>
+    <meta charsset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 14: JQuery</title>
+    <link rel="stylesheet" type="text/css" href="activity13.css">
+    <style>
+        .pBackground{background-color:orange ;}
+        #addclass, #removeClass, #toggleClass{padding: 0.5em 1em; background-color:green; color:lightgreen;border-radius:50%;}
+        .container{border: inset 10px gray; width: 300px;height:200px;}
+        .circle{width:200px; height:200px; background-color: purple; padding:3em; text-align: center; border-radius: 50%; margin: 3em;font-size:1.1em; }
+
+        *{box-sizing: bprder-box;}
+        .target_div{height: 200px; width: 200px; background-color: olive; color: lightyello;padding: 1em}
+        .changeBG{background-color: orange;}
+        .circle, Circle{background-color: purple; height:200px; width:200px;border-radius:50%;padding:3em;text-align: center;}
+        .rectangle{border-radius:0%; background-color: yellow; border:dashed 10px olive;}
+    </style>
+   
+</head>
+
+
+<body>
+    <!--ex 1-->
+    <h1>Basic jquery selectors</h1>
+<section id="content">
+
+
+<p>selectors are used to select content within a webpage</p>
+<p>They use a very CSS-like syntax</p>
+<ul id="list1">
+    <h3>Fruits:</h3>
+    <li class="fruit">Apple</li>
+    <li class="fruit">Orange</li>
+    <li class="fruit">Grapes</li>
+    <li class="fruit">Strawberries</li>
+</ul>
+<div id ="example">
+    <p class="a">Paragraph 1 </p>
+    <p id="para1">Paragraph 2</p>
+    <p class="b">Paragraph 3</p>
+    <p id="para4">Paragraph 4</p>
+
+
+</div>
+
+
+</section>
+
+    <script type="text/javascript" src="https://code.jquery/com/jquery-3.6.0.js">
+               
+        let testing = console.log('testing')
+
+        $(document).ready(function(){
+                //double click, hover, and resize events
+
+              $(function(){
+                $('#circle').dblclick(fnDoubleClick);
+                $('#circle').hover(fnHover);
+                $(window).resize(fnResize);
+              })
+
+                function fnDoubleClick(){
+                    $('#circle').toggleClass('rectangle');
+                    $('#circle').html('<h3> Double -click event</h3>')
+                }
+                function fnHover(){
+                    $('#circle').toggleClass('rectangle');
+                    $('#circle').html('<h3> Hover event</h3>')
+                }
+                function fnResize(){
+                    $('#circle').html('<h3>Resize browser window event</h3>')
+
+                }
+                //mouse event : mouseover or mouseleave
+                $('.container').on('.mouseover',mouseEffect)
+                function mouseEffect(){
+                    $('.container').toggleClass('pBackground')
+                }
+
+                //click event 
+                $('#addClass').click(function(){
+                    $('.container').addClass('pBackground')
+                })
+                $('#removeClass').click(function(){
+                    $('.container').removeClass('pBackground')
+                })
+                $('#toggleClass').click(function(){
+                    $('.container').toggleClass('pBackground')
+                })
+            
+
+                //before and after
+                $('#example').before('/*/*/*/*/*/* BEFORE /*/*/*/*')
+                $('#example').after('=*=*=*=*=*=* AFTER =*=*=*=*=*=*')
+
+                //append AND prepend
+                $('#para4').prepend('HEY THERE!')
+                $('#para4').append('NEW CONTENT')
+                //change content of an element
+                $('#para5').html("<p> HELLO WORLD!</p>") 
+
+            
+                // DOM tree selector 
+                let elem = $('#para1')
+                elem.prev().css('border','10px dotted blue')
+
+                // advanced filter selector
+                $("p:container('3')").css({'border':'gray dashed 5px', 'font-family':'monotype corsiva'})
+                //Descedent selector
+                $('div > p:odd').css('background-color','orange')
+                $('ul + div').css('border','ridge olive 10px')
+
+                
+
+                // ex 1
+                $('#para1').css('border','3px solid red')
+                $('.a').css({'color':'magenta', 'padding': '0.5 em 1em', 'background-color': 'yellow'})
+                
+                //ex 2
+                $('#para2').css('border','3px solid red')
+                $('.b').css({'color':'magenta', 'padding': '0.5 em 1em', 'background-color': 'yellow'})
+
+        })
+
+    </script>
+
+</body>
+</html>
