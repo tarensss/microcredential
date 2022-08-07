@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://huixinwu.github.io/microcredential/activities/activity10.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 10</title>
+    <style media="screen">
+    *{box-sizing: border-box;}
+      .title{
+      background-color: purple;
+      color:pink;
+      text-align: center;
+      }
+      .subtitle{
+        text-align: right;
+        font-family: "book antiqua";
+      }
+      .link, .a_main{
+      background-color: darkgray;
+      color: purple;
+      text-decoration: none;
+      padding: 10px 20px;
+      }
+
+      .link:hover{
+      background-color: purple;
+      color:darkgray;
+      box-shadow: 0px 0px 3px 1px purple;
+      }
+      .modalWindow{
+      background-color: rgba(150,150,150,0.6);
+      position: fixed;
+      top:0px;
+      bottom: 0px;
+      left: 0px;
+      right:0px;
+      opacity: 0;
+      pointer-events: none;
+      }
+      .modalWindow:target{
+      opacity: 1;
+      pointer-events: auto;
+      transition: ease-in 0.5s;
+      }
+      .content_main, .content1{
+      height: 450px;
+      background-color: white;
+      margin: 2em;
+      box-shadow: 2px 2px 10px lightgray;
+      border: solid lightgray;
+      padding: 1em;
+      }
+      .content_main{
+        float: left;
+        width: 250px;
+        text-align: center;
+        margin-left: 3em;
+      }
+      .content1{
+        width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5em;
+        position: relative;
+      }
+
+      .info_main{
+      margin-bottom: 3em;
+      }
+      .info_main img{
+      width: 100%;
+      padding: 1em;
+      }
+      .close{
+      background-color:lightgray;
+      padding: 10px;
+      position: absolute;
+      top:0px;
+      right: 0px;
+      text-decoration: none;
+      color: darkgray;
+      font-weight: 600;
+      }
+      .close:hover{
+      background-color: rgb(50,50,50);
+      color: white;
+      }
+      .info{
+      width:90%;
+      height: 80%;
+      position: absolute;
+      top:10%;
+      }
+      .info img{
+      width: 50%;
+      float: left;
+      height: 90%;
+      }
+      .p{
+      float:right;
+      width: 50%;
+      height: 90%;
+      color: orange;
+      font-family: "monotype corsive";
+      }
+
+
+      .p i{
+      font-size: 0.6em;
+      }
+      .p span{
+      text-decoration: line-through;
+      }
+      .p b{
+      color: red;
+      font-size: 1.2em;
+      }
+      .p hr{
+      margin-top: 60px;
+      }
+      .add{
+      width: 90%;
+      background-color: rgb(50,50,50);
+      text-align: center;
+      padding: 0.5em;
+      color: lightgray;
+      text-decoration: none;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10%;
+      }
+      .add:hover{
+      background-color: lightgray;
+      color:rgb(50,50,50);
+      }
+      .a_main{
+      margin-top:2em;
+      display: block;
+      }
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="" style="position: initial; overflow: initial;">
+    <h1 class="title">Feel our nutrient-rich lotions! </h1>
+    <h2 class="subtitle">Tarandeep singh</h2>
+    <!-- item 1-->
+    <section class="main_container">
+      <section class="content_main">
+        <section class="info_main">
+          <img src="./Activity10_files/026527339.jpg" alt="WHITE CITRUS Lotion">
+          <div class="p_main">WHITE CITRUS
+            <br><i>Ultra Shea Body Cream</i>
+          </div>
+        </section>
+        <a href="https://huixinwu.github.io/microcredential/activities/activity10.html#openModal1" class="link">Click here</a>
+      </section>
+      <!-- item 2-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="./Activity10_files/026498930.jpg" alt="EUCALYPTUS SPEARMINT Lotion">
+          <div class="p_main">EUCALYPTUS SPEARMINT
+            <br><i>Aromatherapy Body Lotion</i>
+          </div>
+        </section>
+        <a href="https://huixinwu.github.io/microcredential/activities/activity10.html#openModal2" class="link">Click here</a>
+      </section>
+      <!-- item 3-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="./Activity10_files/026480505.jpg" alt="UBBLY ROSÉ Lotion">
+          <div class="p_main">UBBLY ROSÉ
+            <br><i>Ultimate Hydration Body Cream</i>
+          </div>
+        </section>
+        <a href="https://huixinwu.github.io/microcredential/activities/activity10.html#openModal3" class="link">Click here</a>
+      </section>
+
+      <!-- item 4-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="./Activity10_files/026494225.jpg" alt="CUCUMBER MELONLotion">
+          <div class="p_main">CUCUMBER MELON
+            <br><i>Rich Moisturizer Body Cream</i>
+          </div>
+        </section>
+        <a href="https://huixinwu.github.io/microcredential/activities/activity10.html#openModal4" class="link">Click here</a>
+      </section>
+
+    <!-- modal window 1-->
+  <form action="https://huixinwu.github.io/microcredential/activities/templates/checkout.html" method="post">
+    <div class="modalWindow" id="openModal1">
+      <section class="content1">
+        <a class="close" href="https://huixinwu.github.io/microcredential/activities/activity10.html#">✕</a>
+        <section class="info">
+          <img src="./Activity10_files/026527339.jpg" alt="WHITE CITRUS Lotion">
+          <div class="p">WHITE CITRUS <br><i>Ultra Shea Body Cream</i>
+            <hr>
+            A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+            <hr>
+            <span>$13.50</span> <b>Now $3.25</b>
+          </div>
+        </section>
+        <a class="add" href="#">CONTINUE SHOPPING</a>
+      </section>
+    </div>
+	</form>
+
+  <!-- modal window 2-->
+<form action="https://huixinwu.github.io/microcredential/activities/templates/checkout.html" method="post">
+  <div class="modalWindow" id="openModal2">
+    <section class="content1">
+      <a class="close" href="https://huixinwu.github.io/microcredential/activities/activity10.html#">✕</a>
+      <section class="info">
+        <img src="./Activity10_files/026498930.jpg" alt="PINK WATERMELON Lotion">
+        <div class="p">EUCALYPTUS SPEARMINT <br><i>Aromatherapy Body Lotion</i>
+          <hr>
+          A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+          <hr>
+          <span>$15.50</span> <b>Now $4.50</b>
+        </div>
+      </section>
+     <a class="add" href="#">CONTINUE SHOPPING</a>
+    </section>
+  </div>
+</form>
+
+<!-- modal window 3-->
+<form action="https://huixinwu.github.io/microcredential/activities/templates/checkout.html" method="post">
+<div class="modalWindow" id="openModal3">
+  <section class="content1">
+    <a class="close" href="https://huixinwu.github.io/microcredential/activities/activity10.html#">✕</a>
+    <section class="info">
+      <img src="./Activity10_files/026480505.jpg" alt="PINK WATERMELON Lotion">
+      <div class="p">UBBLY ROSÉ<br><i>Ultimate Hydration Body Cream</i>
+        <hr>
+        A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+        <hr>
+        <span>$12.50</span> <b>Now $3.50</b>
+      </div>
+    </section>
+    <a class="add" href="#">CONTINUE SHOPPING</a>
+  </section>
+</div>
+</form>
+
+<!-- modal window 4-->
+<form action="https://huixinwu.github.io/microcredential/activities/templates/checkout.html" method="post">
+<div class="modalWindow" id="openModal4">
+  <section class="content1">
+    <a class="close" href="https://huixinwu.github.io/microcredential/activities/activity10.html#">✕</a>
+    <section class="info">
+      <img src="./Activity10_files/026494225.jpg" alt="PINK WATERMELON Lotion">
+      <div class="p">CUCUMBER MELON<br><i>Ultimate Hydration Body Cream</i>
+        <hr>
+        A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+        <hr>
+        <span>$13.50</span> <b>Now $4.25</b>
+      </div>
+    </section>
+    <a class="add" href="#">CONTINUE SHOPPING</a>
+  </section>
+</div>
+</form>
+
+
+    <script type="text/javascript">
+    /* YOUR JS CODE FOR ACTIVITY 10 GOES HERE
+    /* a) Find all <div> with class="p" and change the font family to "monotype corsive" and font color to orange
+       ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
+      $(".p").css("font-family", "monotype corsive");
+      $(".p").css("color", "orange");
+    /* ------------ END OF YOUR CODE  ------------*/
+
+
+    /* b) Find all <a> with class="add" and add a href attribute with value of #
+      ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
+      $(".add").attr("href", "#");
+    /* ------------ END OF YOUR CODE  ------------*/
+
+
+
+    /* c) Append a <h2> element right after <h1 class="title">. The text content of the <h2> should be your full name.  Also add a class name “subtitle” to <h2>
+      ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
+      $(".title").after("<h2 class='subtitle'>Tarandeep singh</h2>");
+    /* ------------ END OF YOUR CODE  ------------*/
+
+
+
+    </script>
+  
+
+</section><div id="speechify-focus-mode" style="position: absolute; top: 0px; right: 0px; background: white; width: 100%; min-height: 100%; z-index: 1999; display: none;"></div><div id="speechify-global-notifications"></div><div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
