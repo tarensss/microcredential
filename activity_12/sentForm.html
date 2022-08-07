@@ -1,0 +1,43 @@
+<html>  
+<head>
+    <meta charsset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sent! </title>
+    <link rel="stylesheet" type="text/css" href="activity12.css">
+</head>
+
+
+<body>
+    <h1>Your form has been submitted!</h1>
+    <p> First Name: <span id="storeFN"></span></p>
+    <p> Last Name: <span id="storedLN"></span></p>
+    <a href="activity12.html">BACK</a>
+
+
+
+
+<script type="text/javascript" >
+
+    const storedFN = document.querySelector('#storeFN');
+    const storedLN = document.querySelector('#storedLN');
+    storedFN.innerHTML = localStorage.getItem('FN');
+    storedLN.innerHTMl = sessionStorage.getItem('LN')
+
+</script>
+
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
