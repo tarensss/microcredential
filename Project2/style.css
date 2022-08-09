@@ -66,9 +66,9 @@ body {    background-color: rgb(255, 255, 255);
       }
       .content1{
         width: 500px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 5em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5em;
         position: relative;
       }
 
@@ -120,7 +120,7 @@ body {    background-color: rgb(255, 255, 255);
       text-decoration: line-through;
       }
       .p b{
-      color: red;
+      color: black;
       font-size: 1.2em;
       }
       .p hr{
