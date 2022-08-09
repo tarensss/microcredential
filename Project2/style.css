@@ -36,7 +36,7 @@ body {    background-color: rgb(255, 255, 255);
 
 
     .modalWindow{
-      background-color: rgba(150,150,150,0.6);
+      background-color: rgba(0,0,0,0);
       position: fixed;
       top:0px;
       bottom: 0px;
@@ -108,7 +108,7 @@ body {    background-color: rgb(255, 255, 255);
       float:right;
       width: 50%;
       height: 90%;
-      color: orange;
+      color: black;
       font-family: "monotype corsive";
       }
 
