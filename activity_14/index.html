@@ -121,6 +121,40 @@
                 $('#para2').css('border','3px solid red')
                 $('.b').css({'color':'magenta', 'padding': '0.5 em 1em', 'background-color': 'yellow'})
 
+                /*For the following activity, create two events using jQuery to two different figures, a circle and a square. The events are:
+
+//click event: when the square shape is clicked, its background color changes randomly and its text displays the number of times it has been clicked.'
+
+//mouseleave event: when the mouse moves outside the circle, its background color randomly changes and the text shows the number of times the mouse has moved out of it.
+
+*/
+
+   
+                $('#circle').click(function(){
+                    $('#circle').css('background-color', '#'+Math.floor(Math.random()*16777215).toString(16))
+                    $('#circle').html('<h3>Click event</h3>')
+                })
+        
+                $('#circle').mouseleave(function(){
+                    $('#circle').css('background-color', '#'+Math.floor(Math.random()*16777215).toString(16))
+                    $('#circle').html('<h3>Mouseleave event</h3>')
+                })
+
+                
+
+                $('#square').click(function(){
+                    $('#square').css('background-color', '#'+Math.floor(Math.random()*16777215).toString(16))
+                    $('#square').html('<h3>Click event</h3>')
+                })
+
+
+
+
+
+
+      
+                   
+
         })
 
     </script>
