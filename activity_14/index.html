@@ -15,6 +15,26 @@
         .changeBG{background-color: orange;}
         .circle, Circle{background-color: purple; height:200px; width:200px;border-radius:50%;padding:3em;text-align: center;}
         .rectangle{border-radius:0%; background-color: yellow; border:dashed 10px olive;}
+        #bttn {
+            width: 270px;
+            height: 240px;
+            -webkit-border-radius: 65px;
+            -moz-border-radius: 1px;
+            border-radius: 65px;
+            background: #f00;
+           
+         }
+         .first {
+            position: absolute;
+            background: #E73C49;
+            width: 300px;
+            height: 250px;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+         
     </style>
    
 </head>
@@ -35,21 +55,47 @@
     <li class="fruit">Grapes</li>
     <li class="fruit">Strawberries</li>
 </ul>
-<div id ="example">
-    <p class="a">Paragraph 1 </p>
-    <p id="para1">Paragraph 2</p>
-    <p class="b">Paragraph 3</p>
-    <p id="para4">Paragraph 4</p>
 
 
-</div>
+<button id="bttn">Touch ME!</button>
+
+<div class="first"></div>
+
 
 
 </section>
 
-    <script type="text/javascript" src="https://code.jquery/com/jquery-3.6.0.js">
+    <script>
                
         let testing = console.log('testing')
+
+        const btn = document.getElementById('bttn');
+
+        let index = 0;
+
+        const colors = ['salmon', 'green', 'blue', 'purple'];
+
+        btn.addEventListener('click', function onClick() {
+        btn.style.backgroundColor = colors[index];
+        btn.style.color = 'white';
+
+        index = index >= colors.length - 1 ? 0 : index + 1;
+        });
+
+
+        //square
+        var color = [, "#3C9EE7", "#E7993C", 
+        "#E73C99", "#3CE746", "#E7993C"];
+  
+    document.querySelector("div").addEventListener(
+            "mouseover", function () {
+                  
+        document.querySelector("div").style.background 
+            = color[Math.floor(Math.random() * color.length)];
+    })
+
+
+
 
         $(document).ready(function(){
                 //double click, hover, and resize events
@@ -122,74 +168,8 @@
                 $('.b').css({'color':'magenta', 'padding': '0.5 em 1em', 'background-color': 'yellow'})
 
                
-                //click event: when the square shape is clicked, its background color changes randomly and its text displays the number of times it has been clicked.
-                $('#circle').click(function(){
-                    let random = Math.floor(Math.random()*255)
-                    let random2 = Math.floor(Math.random()*255)
-                    let random3 = Math.floor(Math.random()*255)
-                    let random4 = Math.floor(Math.random()*255)
-                    let random5 = Math.floor(Math.random()*255)
-                    let random6 = Math.floor(Math.random()*255)
-                    let random7 = Math.floor(Math.random()*255)
-                    let random8 = Math.floor(Math.random()*255)
-                    let random9 = Math.floor(Math.random()*255)
-                    let random10 = Math.floor(Math.random()*255)
-                    let random11 = Math.floor(Math.random()*255)
-                    let random12 = Math.floor(Math.random()*255)
-                    let random13 = Math.floor(Math.random()*255)
-                    let random14 = Math.floor(Math.random()*255)
-                    let random15 = Math.floor(Math.random()*255)
-                    let random16 = Math.floor(Math.random()*255)
-                    let random17 = Math.floor(Math.random()*255)
-                    let random18 = Math.floor(Math.random()*255)
-                    let random19 = Math.floor(Math.random()*255)
-                    let random20 = Math.floor(Math.random()*255)
-                    let random21 = Math.floor(Math.random()*255)
-                    let random22 = Math.floor(Math.random()*255)
-                    let random23 = Math.floor(Math.random()*255)
-                    let random24 = Math.floor(Math.random()*255)
-                    let random25 = Math.floor(Math.random()*255)
-                    let random26 = Math.floor(Math.random()*255)
-                    let random27 = Math.floor(Math.random()*255)
-                    let random28 = Math.floor(Math.random()*255)
-                    let random29 = Math.floor(Math.random())
-            // mouseleave event: when the mouse moves outside the circle, its background color randomly changes and the text shows the number of times the mouse has moved out of it.
-                    $('#circle').mouseleave(function(){
-                        $('#circle').css('background-color',`rgb(${random},${random2},${random3})`)
-                        $('#circle').html(`<h3>Mouseleave event: ${random4}</h3>`)
-                    }
-                    )
-                    // mouseover event: when the mouse moves inside the circle, its background color randomly changes and the text shows the number of times the mouse has moved inside it.
-                    $('#circle').mouseover(function(){
-                        $('#circle').css('background-color',`rgb(${random5},${random6},${random7})`)
-                        $('#circle').html(`<h3>Mouseover event: ${random8}</h3>`)
-                    }
-                    )
-                    //click event: when the square shape is clicked, its background color changes randomly and its text displays the number of times it has been clicked.
-                    $('#circle').click(function(){
-                        $('#circle').css('background-color',`rgb(${random9},${random10},${random11})`)
-                        $('#circle').html(`<h3>Click event: ${random12}</h3>`)
-                    }
-                    )
-                    //dblclick event: when the square shape is double-clicked, its background color changes randomly and its text displays the number of times it has been double-clicked.
-                    $('#circle').dblclick(function(){
-                        $('#circle').css('background-color',`rgb(${random13},${random14},${random15})`)
-                        $('#circle').html(`<h3>Dblclick event: ${random16}</h3>`)
-                    }
-                    )
-                
-                })
-     
+    })
 
-
-
-
-
-
-      
-                   
-
-        })
 
     </script>
 
